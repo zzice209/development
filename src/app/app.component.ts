@@ -53,7 +53,7 @@ export class AppComponent {
             if(!this.checkPattern(this.listactions[i].end)) {
                 // alert("Step: "+(i+1)+", End time wrong format, please check again");
                 document.getElementsByClassName("end")[i].classList.add("error");
-                return;
+                return true;
             }
         }
         let res: Observable<any> = this.appService.submitData('text', this.body);
