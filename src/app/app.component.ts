@@ -48,7 +48,7 @@ export class AppComponent {
                 // alert("Step: "+(i+1)+", From time wrong format, please check again");
                 document.getElementsByClassName("start")[i].classList.add("error");
                 // console.log(document.getElementsByClassName("start")[i]);
-                return;
+                return false;
             }
             if(!this.checkPattern(this.listactions[i].end)) {
                 // alert("Step: "+(i+1)+", End time wrong format, please check again");
